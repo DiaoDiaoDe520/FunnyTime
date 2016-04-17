@@ -1,0 +1,5 @@
+platform:ios, '7.0'
+pod 'AFNetworking', '~> 2.6.3'
+pod 'FMDB', '~> 2.5'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'EGOCache', '~> 2.1.3'

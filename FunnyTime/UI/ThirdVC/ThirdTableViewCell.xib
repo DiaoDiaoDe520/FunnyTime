@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="thirdCell" id="8qG-F4-goc" customClass="ThirdTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8qG-F4-goc" id="bBh-Hf-o7u">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mhZ-Cu-Q08">
+                        <rect key="frame" x="5" y="5" width="310" height="130"/>
+                    </imageView>
+                    <view alpha="0.5499999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOC-MN-oPL">
+                        <rect key="frame" x="239" y="13" width="67" height="27"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="vl5-oL-5N6">
+                                <rect key="frame" x="6" y="3" width="19" height="21"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fav" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXX-c9-oeO">
+                                <rect key="frame" x="28" y="3" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="88f-tr-f6o"/>
+                            <constraint firstAttribute="width" constant="67" id="gyK-f8-lkS"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titleName.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lqt-Br-iRl">
+                        <rect key="frame" x="5" y="102" width="310" height="33"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4s-6M-7xU">
+                        <rect key="frame" x="15" y="108" width="291" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="291" id="edA-Qa-zlu"/>
+                            <constraint firstAttribute="height" constant="27" id="hRh-pg-Ohz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uOC-MN-oPL" firstAttribute="top" secondItem="bBh-Hf-o7u" secondAttribute="topMargin" constant="5" id="5aT-mX-yKK"/>
+                    <constraint firstItem="mhZ-Cu-Q08" firstAttribute="leading" secondItem="bBh-Hf-o7u" secondAttribute="leadingMargin" constant="-3" id="FD0-zG-ota"/>
+                    <constraint firstItem="mhZ-Cu-Q08" firstAttribute="top" secondItem="bBh-Hf-o7u" secondAttribute="topMargin" constant="-3" id="JUI-yV-wO6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mhZ-Cu-Q08" secondAttribute="trailing" constant="-3" id="LmB-rK-TjA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mhZ-Cu-Q08" secondAttribute="bottom" constant="-8" id="QKQ-b1-Xk9"/>
+                    <constraint firstItem="t4s-6M-7xU" firstAttribute="leading" secondItem="bBh-Hf-o7u" secondAttribute="leadingMargin" constant="7" id="QNh-0N-AVH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uOC-MN-oPL" secondAttribute="trailing" constant="6" id="j8P-cU-AtD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="t4s-6M-7xU" secondAttribute="bottom" constant="-8" id="zOo-GC-Yyn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="blackView" destination="uOC-MN-oPL" id="UMK-c5-lAZ"/>
+                <outlet property="favLable" destination="cXX-c9-oeO" id="JEN-ZS-8M2"/>
+                <outlet property="myImageView" destination="mhZ-Cu-Q08" id="VDm-cl-4D4"/>
+                <outlet property="titleLable" destination="t4s-6M-7xU" id="cTn-qS-tU0"/>
+            </connections>
+            <point key="canvasLocation" x="482" y="521"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="favImage.png" width="33" height="37"/>
+        <image name="titleName.png" width="640" height="114"/>
+    </resources>
+</document>

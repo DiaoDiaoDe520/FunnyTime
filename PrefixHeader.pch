@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  FunLive
+//
+//  Created by qf1 on 15/12/13.
+//  Copyright © 2015年 qianfeng. All rights reserved.
+//
+
+#import "Common.h"
+#import <AFNetworking.h>
+#import "MyTabBarController.h"
+#import <UIImageView+WebCache.h>
+#import "CityModel.h"
+#import "City.h"
+#import "Prosion.h"
+#import "APPDataModel.h"
+#import "NetWorkStatus.h"
+#import "QuickCreateView.h"
+
+
+
+#import <EGOCache.h>
+
+#define STATUS_BAR 0
+#define Theme_color [UIColor colorWithWhite:0.92 alpha:1.000]
+
+#define LIMIT_DATABASE_NAME @"myAqlite"
+#define LIMIT_DATATABLE_NAME @"AppData"
+#define LIMIT_DATATABLE_ARRAR @[@"",@""]
+
+#define BUTTON_IMAGES @[@"manyButton_one.png",@"manyButton_two.png",@"manyButton_three.png",@"manyButton_four.png"]
+#define BUTTON_TITLES @[@"周边",@"导航",@"古镇",@"活动"]
+#define SORTARRAY @[@"价格低到高",@"热度排行",@"价格高到低",@"距离由近到远"]
+
+
+//第二个页面的 api
+#define Second_Category @[@"1000",@"1",@"4",@"7",@"9",@"3"]
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+#define Welcome_PageArray @[@"IMG_0862.PNG",@"IMG_0863.PNG",@"IMG_0864.PNG",@"IMG_0865.PNG"]
+
+
+#define SEARCH_ARRAY @[@"外滩",@"广州塔",@"西湖",@"布达拉宫",@"丽江",@"玫瑰海岸",@"世界公园",@"古北水镇"]
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
